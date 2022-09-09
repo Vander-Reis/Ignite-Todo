@@ -1,0 +1,103 @@
+.container {
+    max-width: 46rem;
+    margin: auto;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -1.5rem;
+    margin-bottom: 4rem;
+}
+
+.container input {
+    width: 40rem;
+    height: 3.4rem;
+    background: var(--gray-500);
+    border: none;
+    border-radius: 8px;
+    color: var(--gray-100);
+    padding: 1rem;
+}
+
+.container button {
+    width: 5.625rem;
+    height: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-100);
+    gap: 0.5rem;
+    background: var(--blue-dark);
+    transition: all 200ms;
+}
+
+.container button:hover {
+    background: var(--blue);
+}
+
+.statusTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.taskCreated, .completedTasks {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.taskCreated span, .completedTasks span {
+    padding: 2px 8px 2px 8px;
+    background: var(--gray-400);
+    border-radius: 999px;
+}
+
+.taskCreated p {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: var(--blue)
+}
+
+.completedTasks p {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: var(--purple);
+}
+
+.withNoTasks img{
+    width: 3.5rem;
+    height: 3.5rem;
+}   
+
+.withNoTasks {
+    padding-top: 4rem;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.withNoTasks p {
+    font-size: 16px;
+    line-height: 140%;
+    color: #808080;
+}
+
+.withNoTasks p:nth-child(2) {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #808080;
+}
